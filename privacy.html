@@ -18,8 +18,8 @@
 
 <p>
   MientrasDuermes es una herramienta de automatización de uso estrictamente personal.
-  La usa únicamente su desarrollador, sobre su propia cuenta de Google. No se ofrece a
-  terceros, no tiene usuarios externos ni registro público.
+  La usa únicamente su desarrollador, sobre su propia cuenta de Google y su propia cuenta
+  de TikTok. No se ofrece a terceros, no tiene usuarios externos ni registro público.
 </p>
 
 <h2>Qué acceso pide y para qué</h2>
@@ -30,29 +30,40 @@
     respaldo de los vídeos e imágenes que la herramienta genera.
   </li>
   <li>
-    <strong>YouTube</strong> (subida de vídeos): se usa sólo para publicar, en el propio
-    canal de YouTube del desarrollador, los vídeos generados por la herramienta.
+    <strong>YouTube</strong> (subida y gestión de vídeos): se usa sólo para publicar, en el
+    propio canal de YouTube del desarrollador, los vídeos generados por la herramienta, y
+    para actualizar el título y la miniatura de esos mismos vídeos.
+  </li>
+  <li>
+    <strong>TikTok</strong> (Login Kit y Content Posting API; permisos
+    <code>user.info.basic</code> y <code>video.publish</code>): se usa sólo para publicar, en
+    la propia cuenta de TikTok del desarrollador, los vídeos generados por la herramienta. La
+    herramienta recibe el identificador de la cuenta (open_id), los tokens de acceso y las
+    opciones de publicación de la cuenta (por ejemplo, los niveles de privacidad disponibles).
+    No accede a mensajes, seguidores, contactos ni a ningún otro dato.
   </li>
 </ul>
 
 <h2>Qué se hace con los datos</h2>
 <p>
-  Los datos a los que accede la herramienta (los archivos de Drive y el canal de YouTube
-  del propio desarrollador) se usan exclusivamente para el funcionamiento de la
+  Los datos a los que accede la herramienta (los archivos de Drive, el canal de YouTube y
+  la cuenta de TikTok del propio desarrollador) se usan exclusivamente para el funcionamiento de la
   automatización descrita arriba. No se comparten, venden, publican ni transfieren a
   ningún tercero, y no se usan con fines publicitarios.
 </p>
 
 <h2>Retención</h2>
 <p>
-  Los datos permanecen en la propia cuenta de Google del desarrollador (Drive y YouTube),
-  bajo su control directo, mientras la herramienta esté en uso.
+  Los datos permanecen en las propias cuentas del desarrollador (Google Drive, YouTube y
+  TikTok), bajo su control directo, mientras la herramienta esté en uso. Los tokens de
+  acceso se guardan sólo en el equipo del desarrollador y nunca se comparten.
 </p>
 
 <h2>Revocar el acceso</h2>
 <p>
   El acceso puede revocarse en cualquier momento desde
-  <a href="https://myaccount.google.com/permissions">la página de permisos de la Cuenta de Google</a>.
+  <a href="https://myaccount.google.com/permissions">la página de permisos de la Cuenta de Google</a>
+  y, en TikTok, desde Configuración y privacidad → Seguridad → Apps y servicios.
 </p>
 
 <h2>Contacto</h2>
